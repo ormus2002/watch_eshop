@@ -8,16 +8,16 @@ gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'coffee-rails', '~> 4.2'
 gem 'faker', git: 'https://github.com/faker-ruby/faker.git', branch: 'master'
+gem 'jbuilder'
 gem 'jquery-rails'
 gem 'oj'
 gem 'oj_mimic_json'
 gem 'pq'
-
 gem 'puma', '~> 4.1'
-gem 'sass-rails', '>= 6'
+gem 'sassc-rails', '>= 2.1.0'
 gem 'webpacker', '~> 4.0'
 gem 'turbolinks', '~> 5'
-gem 'jbuilder'
+gem 'uglifier', '>= 1.3.0'
 
 group :development, :test do
   gem 'database_cleaner'
@@ -27,7 +27,7 @@ group :development, :test do
   gem 'rails-controller-testing'
   gem 'rb-readline'
   gem 'rspec-json_expectations'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '4.0.0.beta3'
 end
 
 group :development do
@@ -43,8 +43,7 @@ group :test do
   gem 'launchy'
   gem 'rubocop', require: false
   gem 'shoulda-matchers'
-  gem 'chromedriver-helper'
-  gem 'selenium-webdriver'
+  gem 'webdrivers'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

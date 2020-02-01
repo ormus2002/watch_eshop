@@ -3,11 +3,24 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
+// =require typeahead.bundle.js
+// =require jquery.easydropdown.js
+// =require easydrop.js
+// =require memenu.js
+// =require mem.js
+// =require responsiveslides.min.js
+// =require responsive.js
+// =require imagezoom.js
+// =require jquery.flexslider.js
+// =require flexs.js
+
+import "bootstrap"
+import "../stylesheets/application"
+
 require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
-
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)

@@ -6,11 +6,11 @@
 
 (function(root, factory) {
     if (typeof define === "function" && define.amd) {
-        define("bloodhound", [ "jquery" ], function(a0) {
+        define("bloodhound", [ "../../.rvm/gems/ruby-2.7.0/gems/jquery-rails-4.3.5/vendor/assets/javascripts/jquery" ], function(a0) {
             return root["Bloodhound"] = factory(a0);
         });
     } else if (typeof exports === "object") {
-        module.exports = factory(require("jquery"));
+        module.exports = factory(require("../../.rvm/gems/ruby-2.7.0/gems/jquery-rails-4.3.5/vendor/assets/javascripts/jquery"));
     } else {
         root["Bloodhound"] = factory(jQuery);
     }
@@ -919,11 +919,11 @@
 
 (function(root, factory) {
     if (typeof define === "function" && define.amd) {
-        define("typeahead.js", [ "jquery" ], function(a0) {
+        define("typeahead.js", [ "../../.rvm/gems/ruby-2.7.0/gems/jquery-rails-4.3.5/vendor/assets/javascripts/jquery" ], function(a0) {
             return factory(a0);
         });
     } else if (typeof exports === "object") {
-        module.exports = factory(require("jquery"));
+        module.exports = factory(require("../../.rvm/gems/ruby-2.7.0/gems/jquery-rails-4.3.5/vendor/assets/javascripts/jquery"));
     } else {
         factory(jQuery);
     }

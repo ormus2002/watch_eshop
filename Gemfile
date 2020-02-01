@@ -6,7 +6,7 @@ ruby '2.7.0'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
 
 gem 'bootstrap-sass', '~> 3.4.1'
-gem 'coffee-rails', '~> 4.2'
+gem 'coffee-rails', '~> 5.0.0'
 gem 'faker', git: 'https://github.com/faker-ruby/faker.git', branch: 'master'
 gem 'jbuilder'
 gem 'jquery-rails'
@@ -18,6 +18,8 @@ gem 'sassc-rails', '>= 2.1.0'
 gem 'webpacker', '~> 4.0'
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
+gem 'breadcrumbs_on_rails'
+gem 'meta-tags'
 
 group :development, :test do
   gem 'database_cleaner'

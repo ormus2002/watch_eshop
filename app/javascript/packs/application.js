@@ -3,19 +3,21 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
-// =require typeahead.bundle.js
-// =require jquery.easydropdown.js
-// =require easydrop.js
-// =require memenu.js
-// =require mem.js
-// =require responsiveslides.min.js
-// =require responsive.js
-// =require imagezoom.js
-// =require jquery.flexslider.js
-// =require flexs.js
+
 
 import "bootstrap"
 import "../stylesheets/application"
+
+import './typeahead.bundle'
+import './jquery.easydropdown'
+import './easydrop'
+import './memenu'
+import './mem'
+import './responsiveslides.min'
+import './responsive'
+import './imagezoom'
+import './jquery.flexslider'
+import './flexs'
 
 require("@rails/ujs").start()
 require("turbolinks").start()

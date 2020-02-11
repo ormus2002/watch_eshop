@@ -18,6 +18,7 @@ import './responsive'
 import './imagezoom'
 import './jquery.flexslider'
 import './flexs'
+import './simpleCart.min'
 
 require("@rails/ujs").start()
 require("turbolinks").start()

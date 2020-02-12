@@ -13,21 +13,21 @@
 <!--start-single-->
 <div class="single contact">
   <div class="container">
-    <div class="single-main">
+    <div class="single-main row">
       <div class="col-md-9 single-main-left">
-        <div class="sngl-top">
+        <div class="sngl-top row">
           <div class="col-md-5 single-top-left">
 
             <div class="flexslider">
               <ul class="slides">
-                <li data-thumb="<%= asset_pack_path 's-1.jpg' %>">
-                  <div class="thumb-image"><img src="<%= asset_pack_path 's-1.jpg' %>" data-imagezoom="true" class="img-responsive" alt="" /></div>
+                <li data-thumb="<%= asset_pack_path 'media/images/s-1.jpg' %>">
+                  <div class="thumb-image"><img src="<%= asset_pack_path 'media/images/s-1.jpg' %>" data-imagezoom="true" class="img-responsive" alt="" /></div>
                 </li>
-                <li data-thumb="<%= asset_pack_path 's-2.jpg' %>">
-                  <div class="thumb-image"><img src="<%= asset_pack_path 's-2.jpg' %>" data-imagezoom="true" class="img-responsive" alt="" /></div>
+                <li data-thumb="<%= asset_pack_path 'media/images/s-2.jpg' %>">
+                  <div class="thumb-image"><img src="<%= asset_pack_path 'media/images/s-2.jpg' %>" data-imagezoom="true" class="img-responsive" alt="" /></div>
                 </li>
-                <li data-thumb="<%= asset_pack_path 's-3.jpg' %>">
-                  <div class="thumb-image"><img src="<%= asset_pack_path 's-3.jpg' %>" data-imagezoom="true" class="img-responsive" alt="" /></div>
+                <li data-thumb="<%= asset_pack_path 'media/images/s-3.jpg' %>">
+                  <div class="thumb-image"><img src="<%= asset_pack_path 'media/images/s-3.jpg' %>" data-imagezoom="true" class="img-responsive" alt="" /></div>
                 </li>
               </ul>
             </div>
@@ -93,33 +93,33 @@
         </div>
         <div class="tabs">
           <ul class="menu_drop">
-            <li class="item1"><a href="#"><img src="<%= asset_pack_path 'arrow.png' %>" alt="">Description</a>
+            <li class="item1"><a href="#"><img src="<%= asset_pack_path 'media/images/arrow.png' %>" alt="">Description</a>
               <ul>
                 <li class="subitem1"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</a></li>
                 <li class="subitem2"><a href="#">Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Tellus elementum sagittis vitae et leo duis.</a></li>
                 <li class="subitem3"><a href="#">Elementum eu facilisis sed odio morbi quis commodo. Eget aliquet nibh praesent tristique magna sit amet purus gravida. Bibendum neque egestas congue quisque.</a></li>
               </ul>
             </li>
-            <li class="item2"><a href="#"><img src="<%= asset_pack_path 'arrow.png' %>" alt="">Additiomal information</a>
+            <li class="item2"><a href="#"><img src="<%= asset_pack_path 'media/images/arrow.png' %>" alt="">Additiomal information</a>
               <ul>
                 <li class="subitem1"><a href="#">Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Tellus elementum sagittis vitae et leo duis.</a></li>
                 <li class="subitem2"><a href="#">Elementum eu facilisis sed odio morbi quis commodo. Eget aliquet nibh praesent tristique magna sit amet purus gravida. Bibendum neque egestas congue quisque.</a></li>
               </ul>
             </li>
-            <li class="item3"><a href="#"><img src="<%= asset_pack_path 'arrow.png' %>" alt="">Reviews (10)</a>
+            <li class="item3"><a href="#"><img src="<%= asset_pack_path 'media/images/arrow.png' %>" alt="">Reviews (10)</a>
               <ul>
                 <li class="subitem1"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</a></li>
                 <li class="subitem2"><a href="#">Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Tellus elementum sagittis vitae et leo duis.</a></li>
                 <li class="subitem3"><a href="#">Elementum eu facilisis sed odio morbi quis commodo. Eget aliquet nibh praesent tristique magna sit amet purus gravida. Bibendum neque egestas congue quisque.</a></li>
               </ul>
             </li>
-            <li class="item4"><a href="#"><img src="<%= asset_pack_path 'arrow.png' %>" alt="">Helpful Links</a>
+            <li class="item4"><a href="#"><img src="<%= asset_pack_path 'media/images/arrow.png' %>" alt="">Helpful Links</a>
               <ul>
                 <li class="subitem1"><a href="#">Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Tellus elementum sagittis vitae et leo duis.</a></li>
                 <li class="subitem2"><a href="#">Elementum eu facilisis sed odio morbi quis commodo. Eget aliquet nibh praesent tristique magna sit amet purus gravida. Bibendum neque egestas congue quisque.</a></li>
               </ul>
             </li>
-            <li class="item5"><a href="#"><img src="<%= asset_pack_path 'arrow.png' %>" alt="">Make A Gift</a>
+            <li class="item5"><a href="#"><img src="<%= asset_pack_path 'media/images/arrow.png' %>" alt="">Make A Gift</a>
               <ul>
                 <li class="subitem1"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</a></li>
                 <li class="subitem2"><a href="#">Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Tellus elementum sagittis vitae et leo duis.</a></li>
@@ -133,21 +133,147 @@
           <div class="latestproducts">
             <div class="product-one">
               <h3>Related Products</h3>
-              <% @product.relted.each do |related| %>
+
+              <% @product.related.each do |related| %>
                 <div class="col-md-4 product-left p-left">
                   <div class="product-main simpleCart_shelfItem">
                     <a href="<%= related.id %>" class="mask">
-                      <img class="img-responsive zoom-img" src="<%= asset_pack_path related.img %>" alt="" />
+                      <img class="img-responsive zoom-img" src="<%= asset_pack_path 'media/images/' +related.img %>" alt="" />
                     </a>
                     <div class="product-bottom">
-
+                      <h3><a href="<%= related.id %>"><%= related.title %></a></h3>
+                      <p>Explore Now</p>
+                      <h4>
+                        <a class="item_add add-to-cart-link" href="cart/add?id=<%= related.id %>" data-id="<%= related.id %>"><i></i>
+                        </a>
+                        <span class="item_price">$ <%= related.price %></span>
+                        <% if related.old_price %>
+                          <del><%= related.old_price %></del>
+                        <% end %>
+                      </h4>
+                    </div>
+                    <div class="srch">
+                      <span>-50%</span>
                     </div>
                   </div>
                 </div>
+              <% end %>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        <% end %>
+
+        <% if recent_products.any? %>
+          <div class="latestproducts">
+            <div class="product-one">
+              <h3>Recently Products</h3>
+
+              <% recent_products.each do |recently| %>
+                <div class="col-md-4 product-left p-left">
+                  <div class="product-main simpleCart_shelfItem">
+                    <a href="<%= recently.id %>" class="mask">
+                      <img class="img-responsive zoom-img" src="<%= asset_pack_path 'media/images/' +recently.img %>" alt="" />
+                    </a>
+                    <div class="product-bottom">
+                      <h3><a href="<%= recently.id %>"><%= recently.title %></a></h3>
+                      <p>Explore Now</p>
+                      <h4>
+                        <a class="item_add add-to-cart-link" href="cart/add?id=<%= recently.id %>" data-id="<%= recently.id %>"><i></i>
+                        </a>
+                        <span class="item_price">$ <%= recently.price %></span>
+                        <% if recently.old_price %>
+                          <del><%= recently.old_price %></del>
+                        <% end %>
+                      </h4>
+                    </div>
+                    <div class="srch">
+                      <span>-50%</span>
+                    </div>
+                  </div>
+                </div>
+              <% end %>
+              <div class="clearfix"></div>
             </div>
           </div>
         <% end %>
       </div>
+
+      <div class="col-md-3 single-right">
+        <div class="w_sidebar">
+          <section class="sky-form">
+            <h4>Categories</h4>
+            <div class="row1 scroll-pane">
+              <div class="col col-4">
+                <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>All Accessories</label>
+              </div>
+              <div class="col col-4">
+                <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Women Watches</label>
+                <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Kids Watches</label>
+                <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Men Watches</label>
+              </div>
+            </div>
+          </section>
+          <section class="sky-form">
+            <h4>Brand</h4>
+            <div class="row1 row2 scroll-pane">
+              <div class="col col-4">
+                <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>kurtas</label>
+              </div>
+              <div class="col col-4">
+                <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Sonata</label>
+                <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Titan</label>
+                <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Casio</label>
+                <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Omax</label>
+                <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>shree</label>
+                <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Fastrack</label>
+                <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Sports</label>
+                <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Fossil</label>
+                <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Maxima</label>
+                <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Yepme</label>
+                <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Citizen</label>
+                <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Diesel</label>
+              </div>
+            </div>
+          </section>
+          <section class="sky-form">
+            <h4>Colour</h4>
+            <ul class="w_nav2">
+              <li><a class="color1" href="#"></a></li>
+              <li><a class="color2" href="#"></a></li>
+              <li><a class="color3" href="#"></a></li>
+              <li><a class="color4" href="#"></a></li>
+              <li><a class="color5" href="#"></a></li>
+              <li><a class="color6" href="#"></a></li>
+              <li><a class="color7" href="#"></a></li>
+              <li><a class="color8" href="#"></a></li>
+              <li><a class="color9" href="#"></a></li>
+              <li><a class="color10" href="#"></a></li>
+              <li><a class="color11" href="#"></a></li>
+              <li><a class="color12" href="#"></a></li>
+              <li><a class="color13" href="#"></a></li>
+              <li><a class="color14" href="#"></a></li>
+              <li><a class="color15" href="#"></a></li>
+            </ul>
+          </section>
+          <section class="sky-form">
+            <h4>discount</h4>
+            <div class="row1 row2 scroll-pane">
+              <div class="col col-4">
+                <label class="radio"><input type="radio" name="radio" checked=""><i></i>60% and above</label>
+                <label class="radio"><input type="radio" name="radio"><i></i>50% and above</label>
+                <label class="radio"><input type="radio" name="radio"><i></i>40% and above</label>
+              </div>
+              <div class="col col-4">
+                <label class="radio"><input type="radio" name="radio"><i></i>30% and above</label>
+                <label class="radio"><input type="radio" name="radio"><i></i>20% and above</label>
+                <label class="radio"><input type="radio" name="radio"><i></i>10% and above</label>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="clearfix"></div>
     </div>
   </div>
 </div>
+<!--end-single-->

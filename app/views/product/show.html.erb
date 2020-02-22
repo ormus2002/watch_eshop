@@ -133,31 +133,33 @@
           <div class="latestproducts">
             <div class="product-one">
               <h3>Related Products</h3>
+              <div class="row">
 
-              <% @product.related.each do |related| %>
-                <div class="col-md-4 product-left p-left">
-                  <div class="product-main simpleCart_shelfItem">
-                    <a href="<%= related.id %>" class="mask">
-                      <img class="img-responsive zoom-img" src="<%= asset_pack_path 'media/images/' +related.img %>" alt="" />
-                    </a>
-                    <div class="product-bottom">
-                      <h3><a href="<%= related.id %>"><%= related.title %></a></h3>
-                      <p>Explore Now</p>
-                      <h4>
-                        <a class="item_add add-to-cart-link" href="cart/add?id=<%= related.id %>" data-id="<%= related.id %>"><i></i>
-                        </a>
-                        <span class="item_price">$ <%= related.price %></span>
-                        <% if related.old_price %>
-                          <del><%= related.old_price %></del>
-                        <% end %>
-                      </h4>
-                    </div>
-                    <div class="srch">
-                      <span>-50%</span>
+                <% @product.related.each do |related| %>
+                  <div class="col-md-4 product-left p-left">
+                    <div class="product-main simpleCart_shelfItem">
+                      <a href="<%= related.id %>" class="mask">
+                        <img class="img-responsive zoom-img" src="<%= asset_pack_path 'media/images/' +related.img %>" alt="" />
+                      </a>
+                      <div class="product-bottom">
+                        <h3><a href="<%= related.id %>"><%= related.title %></a></h3>
+                        <p>Explore Now</p>
+                        <h4>
+                          <a class="item_add add-to-cart-link" href="cart/add?id=<%= related.id %>" data-id="<%= related.id %>"><i></i>
+                          </a>
+                          <span class="item_price">$ <%= related.price %></span>
+                          <% if related.old_price %>
+                            <del><%= related.old_price %></del>
+                          <% end %>
+                        </h4>
+                      </div>
+                      <div class="srch">
+                        <span>-50%</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-              <% end %>
+                <% end %>
+              </div>
               <div class="clearfix"></div>
             </div>
           </div>

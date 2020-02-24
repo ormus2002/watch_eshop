@@ -10,4 +10,6 @@ RSpec.describe Product, type: :model do
   it { should have_many(:related) }
 
   it { should have_many(:galleries) }
+
+  it { should belong_to(:category)}
 end

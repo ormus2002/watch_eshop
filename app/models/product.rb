@@ -7,5 +7,7 @@ class Product < ApplicationRecord
 
   has_many :galleries
 
+  belongs_to :category
+
   enum hit: { hit: 1, no_hit: 0 }
 end
